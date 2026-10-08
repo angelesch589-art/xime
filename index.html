@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo que aprendí del vídeo - Supabase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lo que aprendí del vídeo</h1>
+        <p class="subtitle">Estudiante: Ximena Pérez | Curso: 2do año - 6ta sección | Asignatura: Informática</p>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introducción</a></li>
+                <li><a href="#conceptos">Conceptos</a></li>
+                <li><a href="#cuestionario">Cuestionario</a></li>
+                <li><a href="#practica">Aplicación</a></li>
+                <li><a href="#entrega">Entrega</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="intro">
+            <h2>1. Introducción</h2>
+            <p>Esta página web presenta una recopilación analítica y técnica sobre el ecosistema de Supabase, basándose en el tutorial práctico de REST API. Exploramos cómo esta alternativa de código abierto a Firebase agiliza la creación y despliegue de bases de datos relacionales en la nube.</p>
+        </section>
+
+        <section id="conceptos">
+            <h2>2. Conceptos Fundamentales</h2>
+            <ul>
+                <li><strong>BaaS (Backend as a Service):</strong> Plataformas que resuelven de forma automática el alojamiento, servidores y bases de datos para que los desarrolladores se concentren en el frontend.</li>
+                <li><strong>PostgreSQL:</strong> Base de datos relacional potente y robusta utilizada internamente por Supabase.</li>
+                <li><strong>RLS (Row Level Security):</strong> Reglas de seguridad estrictas que filtran qué filas puede ver, editar o borrar un usuario según su autenticación.</li>
+            </ul>
+        </section>
+
+        <section id="cuestionario">
+            <h2>3. Cuestionario Resuelto</h2>
+            
+            <div class="pregunta">
+                <h3>1. ¿Cuál es el tema principal del video? Explica de qué trata.</h3>
+                <p>El tema principal del vídeo es una introducción práctica y un recorrido general (Overview) de Supabase como alternativa de código abierto a Firebase.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>2. ¿Qué problema o necesidad tecnológica se aborda?</h3>
+                <p>El video aborda principalmente el problema de la complejidad y el tiempo que requiere configurar un backend desde cero para una aplicación web o móvil.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>3. ¿Cuáles son los cinco conceptos más importantes? Define cada uno.</h3>
+                <p>Los cinco conceptos fundamentales de Supabase incluyen el Backend as a Service (BaaS) para la automatización del servidor, el modelo de código abierto (Open Source) para la portabilidad, y PostgreSQL como base de datos relacional central. Además, el sistema genera automáticamente una API REST para la comunicación con el frontend e implementa Row Level Security (RLS) para gestionar la seguridad a nivel de datos.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>4. ¿Qué herramientas, programas o tecnologías se mencionan y para qué sirven?</h3>
+                <p>Algunas de las herramientas mencionadas son:</p>
+                <ul>
+                    <li><strong>Supabase:</strong> Es el servicio principal del tutorial. Sirve como una plataforma de Backend as a Service (BaaS) de código abierto que proporciona bases de datos, autenticación de usuarios, almacenamiento de archivos y funciones en la nube sin necesidad de configurar un servidor propio de manera tradicional.</li>
+                    <li><strong>PostgreSQL (Postgres):</strong> Es el sistema de gestión de base de datos relacional que corre detrás de Supabase. Sirve para almacenar toda la información del proyecto de manera organizada en tablas, soportando consultas complejas y la seguridad de los datos.</li>
+                    <li><strong>REST API:</strong> Una tecnología/arquitectura de comunicación autogenerada de forma inmediata por Supabase. Sirve para que cualquier aplicación cliente (frontend) pueda consultar, insertar, actualizar o eliminar datos de la base de datos a través de peticiones HTTP estándar.</li>
+                    <li><strong>Thunder Client / REST Client (Extensiones de VS Code):</strong> Herramientas de software utilizadas dentro del editor de código. Sirven para realizar pruebas de peticiones HTTP (GET, POST, DELETE, etc.) directamente a la REST API autogenerada por Supabase sin salir del entorno de desarrollo.</li>
+                    <li><strong>Node.js y JavaScript:</strong> El entorno de ejecución y el lenguaje de programación sugeridos para el ecosistema del proyecto. Sirven para escribir la lógica de programación del lado del cliente o frontend que consumirá los servicios de Supabase utilizando su SDK oficial.</li>
+                </ul>
+            </div>
+
+            <div class="pregunta">
+                <h3>5. ¿Qué procedimientos o pasos se explican? Preséntalos en orden.</h3>
+                <ol>
+                    <li>Primero tienes que hacerte una cuenta en Supabase y vincularla con GitHub.</li>
+                    <li>Crea un proyecto nuevo.</li>
+                    <li>Crea una tabla de productos para cargar filas.</li>
+                    <li>Copiar la ANON key y URL.</li>
+                    <li>Probar en Postman o extensiones de peticiones HTTP.</li>
+                    <li>Haz consultas a la base de datos.</li>
+                </ol>
+            </div>
+
+            <div class="pregunta">
+                <h3>6. ¿Qué ejemplos prácticos aparecen? Explica uno detalladamente.</h3>
+                <p>El video muestra el ejemplo práctico de una tabla de productos. Primero, se diseña la tabla (con campos como ID y título) y se introducen datos de prueba. Luego, usando una extensión como Thunder Client en VS Code, se realiza una petición HTTP (GET) enviando la URL del proyecto y su clave pública (Anon Key) para demostrar cómo Supabase devuelve la información de inmediato en formato JSON. Finalmente, para asegurar el proyecto, se activa la función RLS (Row Level Security) en el panel; el instructor muestra cómo las peticiones quedan bloqueadas automáticamente hasta que se configura una regla específica que define quién puede leer o modificar los registros.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>7. ¿Qué conocimientos previos son necesarios para comprender lo explicado?</h3>
+                <p>Necesitarías saber qué es una base de datos y cómo hacer correctamente una tabla, ya que es algo complicado hacerla 'a ciegas', además de tener un conocimiento básico sobre lenguajes de programación como JavaScript y HTML.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>8. ¿Qué ventajas o beneficios ofrece la tecnología o procedimiento?</h3>
+                <p>Las principales ventajas de Supabase son la reducción drástica del tiempo de desarrollo al automatizar la creación del servidor y la autogeneración inmediata de una API REST lista para usar cada vez que creas una tabla.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>9. ¿Qué dificultades, errores o precauciones deben considerarse?</h3>
+                <p>Un error extremadamente común es activar Row Level Security (RLS) y olvidar crear las políticas de acceso, lo que hace que tu aplicación deje de recibir datos (devuelve arreglos vacíos []) y parezca "muda".</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>10. ¿Cómo aplicarías lo aprendido en un proyecto informático real?</h3>
+                <p>Lo aplicaría para sitios web en donde por alguna razón necesite una tabla de una manera rápida y eficaz. Posiblemente lo usaría para un proyecto grande del colegio para ahorrar tiempo.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>11. ¿Qué parte del video consideras más importante y por qué?</h3>
+                <p>La configuración práctica de las reglas RLS (Row Level Security) junto a la REST API autogenerada. Esto es lo más importante porque Supabase resuelve el problema de la infraestructura al crear una API de forma automática, pero advierte inmediatamente sobre el peligro de dejar los datos expuestos públicamente. Al enseñar a activar y configurar el RLS, se protege la base de datos directamente desde su panel de control.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>12. ¿Qué conocimientos nuevos adquiriste y cómo los explicarías a otra persona?</h3>
+                <p>Antes no sabía hacer tablas por mi cuenta; las veces que las hice fue porque seguí las instrucciones a ciegas, pero ahora sé todo el proceso que eso conlleva. Lo explicaría de la siguiente forma: <em>"Imagínate que crear una tabla en Supabase es como organizar un casillero o un organizador de zapatos familiar donde cada espacio tiene una etiqueta clara."</em></p>
+            </div>
+        </section>
+
+        <section id="practica">
+            <h2>4. Aplicación Práctica</h2>
+            <p>Lo aprendido se puede implementar directamente en aplicaciones web que requieran un login de usuarios rápido y almacenamiento de datos persistentes sin necesidad de construir una arquitectura de servidores Node.js desde cero.</p>
+        </section>
+
+        <section id="entrega">
+            <h2>5. Conclusión y Entrega del Trabajo</h2>
+            <div class="cuadro-conclusion">
+                <p><strong>Conclusión personal:</strong> Supabase democratiza el desarrollo Backend reduciendo tiempos drásticamente a través de su interfaz visual intuitiva y la solidez de Postgres.</p>
+            </div>
